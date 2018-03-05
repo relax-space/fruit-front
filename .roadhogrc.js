@@ -2,6 +2,7 @@ export default {
   entry: 'src/index.js',
   define: {
     'process.env': {},
+    'process.env.STAGE_ENV': process.env.STAGE_ENV || 'dev',
     'process.env.NODE_ENV': process.env.NODE_ENV,
     'process.env.API_ENV': process.env.NODE_ENV,
   },
